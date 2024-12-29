@@ -12,5 +12,17 @@
     --border-radius-small: 7px;
     --border-radius-click: 14px;
 
-    --shadow: 0 5px 0 0 var(--color-light-dark)
+    --shadow: 0 5px 0 0 var(--color-light-dark);
+
+    --font-family-base: 'Spase Grotesk', sans-serif;
+
+    --container-width: 1240px;
+    --container-padding-x: 20px
+
+    --section-padding-y: 70px;
+
+    --input-height: 59px;
+    --button-height: 68px;
+
+    --transition-duration: .2s;
 }

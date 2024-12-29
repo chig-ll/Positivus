@@ -199,6 +199,20 @@ svg * {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --color-light: hsl(0, 0%, 100%);
   --color-dark: hsl(0, 0%, 0%);
@@ -211,5 +225,12 @@ svg * {
   --border-radius-large: 45px;
   --border-radius-small: 7px;
   --border-radius-click: 14px;
-  --shadow: 0 5px 0 0 var(--color-light-dark) ;
+  --shadow: 0 5px 0 0 var(--color-light-dark);
+  --font-family-base: "Spase Grotesk", sans-serif;
+  --container-width: 1240px;
+  --container-padding-x: 20px
+  --section-padding-y: 70px;
+  --input-height: 59px;
+  --button-height: 68px;
+  --transition-duration: .2s;
 }/*# sourceMappingURL=styles.css.map */
