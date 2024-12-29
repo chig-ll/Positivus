@@ -6,4 +6,11 @@
     --color-light-уellow: hsl(56, 100%, 50%);
     --color-light-gray: hsl(0, 0%, 95%);
     --color-gray-alt: hsl(0, 0%, 54%);
+
+    --border: 1px solid var(--color-light-dark);
+    --border-radius-large: 45px;
+    --border-radius-small: 7px;
+    --border-radius-click: 14px;
+
+    --shadow: 0 5px 0 0 var(--color-light-dark)
 }
