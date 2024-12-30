@@ -320,7 +320,7 @@ h4 {
   background-color: var(--color-light-dark);
   color: var(--color-light);
 }
-.button--transparent {
+.button-transparent {
   background-color: transparent;
   color: var(--color-dark);
 }
