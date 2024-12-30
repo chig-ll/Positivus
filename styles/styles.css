@@ -228,7 +228,7 @@ svg * {
   --shadow: 0 5px 0 0 var(--color-light-dark);
   --font-family-base: "Spase Grotesk", sans-serif;
   --container-width: 1240px;
-  --container-padding-x: 20px
+  --container-padding-x: 20px;
   --section-padding-y: 70px;
   --input-height: 59px;
   --button-height: 68px;
@@ -263,7 +263,7 @@ svg * {
 
 @media (min-width: 768px) {
   .visible-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -307,4 +307,34 @@ h3 {
 
 h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
+}
+
+.header {
+  padding-block: 60px var(--section-padding-y);
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+}
+.header__logo:hover svg {
+  fill: var(--color-light-уellow);
+  transition-duration: var(--transition-duration);
+}
+.header__menu {
+  margin-left: auto;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
 }/*# sourceMappingURL=styles.css.map */

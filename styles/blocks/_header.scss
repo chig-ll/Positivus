@@ -1,0 +1,32 @@
+.header {
+    padding-block: 60px var(--section-padding-y);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 220px;
+    }
+
+    &__logo:hover svg {
+        fill: var(--color-light-уellow);
+        transition-duration: var(--transition-duration);
+    }
+
+    &__menu {
+        margin-left: auto;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 40px;
+        }
+    }
+}
