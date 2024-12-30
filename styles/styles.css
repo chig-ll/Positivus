@@ -328,18 +328,33 @@ h4 {
 .header {
   padding-block: 60px var(--section-padding-y);
 }
+@media (max-width: 1280px) {
+  .header {
+    padding-block: 30px 35px;
+  }
+}
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 40px;
 }
+@media (max-width: 1280px) {
+  .header__inner {
+    column-gap: 20px;
+  }
+}
 .header__logo {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 220px;
+  max-width: clamp(144px, 15.27vw, 220px);
   column-gap: 13px;
+}
+@media (max-width: 1280px) {
+  .header__logo {
+    column-gap: 10px;
+  }
 }
 @media (hover: hover) {
   .header__logo:hover svg {
@@ -360,6 +375,11 @@ h4 {
   display: flex;
   align-items: center;
   column-gap: 40px;
+}
+@media (max-width: 1280px) {
+  .header__menu-list {
+    column-gap: 20px;
+  }
 }
 .header__menu-link {
   position: relative;
@@ -395,6 +415,12 @@ h4 {
   padding-inline: 20px;
   background-color: transparent;
   color: var(--color-dark);
+}
+@media (max-width: 1280px) {
+  .header__button {
+    padding-inline: 15px;
+    height: 60px;
+  }
 }
 @media (hover: hover) {
   .header__button:hover {

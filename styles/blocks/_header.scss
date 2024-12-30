@@ -1,19 +1,31 @@
 .header {
     padding-block: 60px var(--section-padding-y);
 
+    @include desktop {
+        padding-block: 30px 35px;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 40px;
+
+        @include desktop {
+            column-gap: 20px;
+        }
     }
 
     &__logo {
         display: flex;
         align-items: center;
         width: 100%;
-        max-width: 220px;
+        max-width: clamp(144px, 15.27vw, 220px);
         column-gap: 13px;
+
+        @include desktop {
+            column-gap: 10px;
+        }
     }
 
 
@@ -31,6 +43,10 @@
             display: flex;
             align-items: center;
             column-gap: 40px;
+
+            @include desktop {
+                column-gap: 20px;
+            }
         }
 
         &-link {
@@ -66,6 +82,11 @@
         padding-inline: 20px;
         background-color: transparent;
         color: var(--color-dark);
+
+        @include desktop {
+            padding-inline: 15px;
+            height: 60px;
+        }
     }
 
     &__button {
