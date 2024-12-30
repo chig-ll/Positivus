@@ -13,11 +13,15 @@
         align-items: center;
         width: 100%;
         max-width: 220px;
+        column-gap: 13px;
     }
 
-    &__logo:hover svg {
-        fill: var(--color-light-уellow);
-        transition-duration: var(--transition-duration);
+
+    &__logo {
+        @include hover-svg {
+            fill: var(--color-light-уellow);
+            transition-duration: var(--transition-duration)
+        }
     }
 
     &__menu {
@@ -27,6 +31,49 @@
             display: flex;
             align-items: center;
             column-gap: 40px;
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 48px;
+
+            @include hover {
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition-duration: inherit;
+            }
+            
+            &:hover::after {
+                background-color: var(--color-light-уellow);
+            }
+        }
+    }
+    &__button {
+        padding-inline: 20px;
+        background-color: var(--color-light-dark);
+        color: var(--color-light);
+    }
+
+    &__button {
+        @include hover {
+            background-color: var(--color-light-уellow);
+            border-color: var(--color-light-уellow);
+            color: inherit;
+            transition-duration: var(--transition-duration);
         }
     }
 }

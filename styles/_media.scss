@@ -57,3 +57,17 @@ $mobile: 767px;
     }
 }
 
+@mixin hover-svg {
+    @media (hover: hover) {
+        &:hover svg {
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active svg {
+            @content;
+        }
+    }
+}
+

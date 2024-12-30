@@ -309,6 +309,19 @@ h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(16px, 1.3888888889vw, 20px);
+  height: var(--button-height);
+  border-radius: var(--border-radius-click);
+  border: var(--border);
+  padding-inline: 35px;
+  background-color: var(--color-light-dark);
+  color: var(--color-light);
+}
+
 .header {
   padding-block: 60px var(--section-padding-y);
 }
@@ -324,10 +337,20 @@ h4 {
   align-items: center;
   width: 100%;
   max-width: 220px;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
 }
-.header__logo:hover svg {
-  fill: var(--color-light-уellow);
-  transition-duration: var(--transition-duration);
+@media (hover: hover) {
+  .header__logo:hover svg {
+    fill: var(--color-light-уellow);
+    transition-duration: var(--transition-duration);
+  }
+}
+@media (hover: none) {
+  .header__logo:active svg {
+    fill: var(--color-light-уellow);
+    transition-duration: var(--transition-duration);
+  }
 }
 .header__menu {
   margin-left: auto;
@@ -337,4 +360,55 @@ h4 {
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+.header__menu-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+}
+@media (hover: hover) {
+  .header__menu-link:hover::after {
+    width: 100%;
+  }
+}
+@media (hover: none) {
+  .header__menu-link:active::after {
+    width: 100%;
+  }
+}
+.header__menu-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition-duration: inherit;
+}
+.header__menu-link:hover::after {
+  background-color: var(--color-light-уellow);
+}
+.header__button {
+  padding-inline: 20px;
+  background-color: var(--color-light-dark);
+  color: var(--color-light);
+}
+@media (hover: hover) {
+  .header__button:hover {
+    background-color: var(--color-light-уellow);
+    border-color: var(--color-light-уellow);
+    color: inherit;
+    transition-duration: var(--transition-duration);
+  }
+}
+@media (hover: none) {
+  .header__button:active {
+    background-color: var(--color-light-уellow);
+    border-color: var(--color-light-уellow);
+    color: inherit;
+    transition-duration: var(--transition-duration);
+  }
 }/*# sourceMappingURL=styles.css.map */

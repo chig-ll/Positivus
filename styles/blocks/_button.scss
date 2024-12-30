@@ -1,0 +1,11 @@
+.button {
+    @include flex-center(true);
+    @include fluid-text(20, 16);
+
+    height: var(--button-height);
+    border-radius: var(--border-radius-click);
+    border: var(--border);
+    padding-inline: 35px;
+    background-color: var(--color-light-dark);
+    color: var(--color-light);
+}
