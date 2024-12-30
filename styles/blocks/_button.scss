@@ -8,4 +8,10 @@
     padding-inline: 35px;
     background-color: var(--color-light-dark);
     color: var(--color-light);
+
+    &--transparent {
+        background-color: transparent;
+        color: var(--color-dark);
+    }
 }
+

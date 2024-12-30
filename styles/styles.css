@@ -249,8 +249,7 @@ svg * {
   border: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
@@ -321,6 +320,10 @@ h4 {
   background-color: var(--color-light-dark);
   color: var(--color-light);
 }
+.button--transparent {
+  background-color: transparent;
+  color: var(--color-dark);
+}
 
 .header {
   padding-block: 60px var(--section-padding-y);
@@ -329,16 +332,14 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 .header__logo {
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 220px;
-  -moz-column-gap: 13px;
-       column-gap: 13px;
+  column-gap: 13px;
 }
 @media (hover: hover) {
   .header__logo:hover svg {
@@ -358,8 +359,7 @@ h4 {
 .header__menu-list {
   display: flex;
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 .header__menu-link {
   position: relative;
@@ -393,8 +393,8 @@ h4 {
 }
 .header__button {
   padding-inline: 20px;
-  background-color: var(--color-light-dark);
-  color: var(--color-light);
+  background-color: transparent;
+  color: var(--color-dark);
 }
 @media (hover: hover) {
   .header__button:hover {
@@ -411,4 +411,6 @@ h4 {
     color: inherit;
     transition-duration: var(--transition-duration);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
