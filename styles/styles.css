@@ -551,7 +551,7 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 .mobile-overlay__list:not(:last-child) {
   row-gap: 20px;
