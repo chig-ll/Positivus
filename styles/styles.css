@@ -545,6 +545,7 @@ h4 {
   align-items: center;
   width: 100%;
   flex-direction: column;
+  row-gap: 20px;
 }
 .mobile-overlay__list {
   display: inline-flex;
@@ -552,17 +553,41 @@ h4 {
   align-items: center;
   flex-direction: column;
   min-height: 70vh;
-}
-.mobile-overlay__list:not(:last-child) {
   row-gap: 20px;
 }
 .mobile-overlay__link {
   padding: 10px;
 }
+@media (hover: hover) {
+  .mobile-overlay__link:hover {
+    color: var(--color-gray-alt);
+  }
+}
+@media (hover: none) {
+  .mobile-overlay__link:active {
+    color: var(--color-gray-alt);
+  }
+}
 .mobile-overlay__button {
   font-size: clamp(14px, 1.25vw, 18px);
+  color: inherit;
+  background-color: transparent;
   padding-inline: 15px;
   height: 40px;
+}
+@media (hover: hover) {
+  .mobile-overlay__button:hover {
+    background-color: var(--color-light-уellow);
+    border-color: var(--color-light-уellow);
+    color: var(--color-gray-alt);
+  }
+}
+@media (hover: none) {
+  .mobile-overlay__button:active {
+    background-color: var(--color-light-уellow);
+    border-color: var(--color-light-уellow);
+    color: var(--color-gray-alt);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,7 @@
 
     width: 100%;
     flex-direction: column;
+    row-gap: 20px;
   }
 
   &__list {
@@ -28,21 +29,34 @@
 
     flex-direction: column;
     min-height: 70vh;
-  }
-
-  &__list:not(:last-child) {
     row-gap: 20px;
   }
 
   &__link {
     padding: 10px;
+
+    & {
+      @include hover {
+        color: var(--color-gray-alt);
+      }
+    }
   }
 
   &__button {
     @include fluid-text(18, 14);
 
+    color: inherit;
+    background-color: transparent;
     padding-inline: 15px;
     height: 40px;
+
+    & {
+      @include hover {
+        background-color: var(--color-light-уellow);
+        border-color: var(--color-light-уellow);
+        color: var(--color-gray-alt); ;
+      }
+    }
   }
 
 }
