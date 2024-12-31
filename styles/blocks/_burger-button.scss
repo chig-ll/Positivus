@@ -13,7 +13,6 @@
     @include abs-center;
 
     content: '';
-    position: absolute;
     width: 50%;
     height: 2px;
     background-color: var(--color-dark);
