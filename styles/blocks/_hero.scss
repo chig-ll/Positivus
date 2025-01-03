@@ -8,6 +8,10 @@
         justify-content: space-between;
         align-items: start;
         column-gap: 50px;
+
+        @include mobile {
+            flex-direction: column;
+        }
     }
 
     &__body {
@@ -16,6 +20,16 @@
         flex-direction: column;
         row-gap: 35px;
         align-items: start;
+
+        @include mobile {
+            display: contents;
+        }
+    }
+
+    &__title {
+        @include mobile {
+            order: -2;
+        }
     }
 
     &__description {
@@ -48,6 +62,18 @@
 
         &-link-zoom:hover {
             fill: hsl(213 100% 58.8%);
+        }
+    }
+    &__image {
+        @include tablet {
+            max-width: 50%;
+            height: auto;
+        }
+
+        @include mobile {
+            max-width: 429px;
+            height: auto;
+            order: -1;
         }
     }
 }
