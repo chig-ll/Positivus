@@ -249,8 +249,7 @@ svg * {
   border: 0 !important;
   padding: 0 !important;
   white-space: nowrap !important;
-  -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
@@ -375,13 +374,11 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 @media (max-width: 1280px) {
   .header__inner {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 .header__logo {
@@ -389,13 +386,11 @@ h4 {
   align-items: center;
   width: 100%;
   max-width: clamp(144px, 15.27vw, 220px);
-  -moz-column-gap: 13px;
-       column-gap: 13px;
+  column-gap: 13px;
 }
 @media (max-width: 1280px) {
   .header__logo {
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
   }
 }
 @media (hover: hover) {
@@ -416,13 +411,11 @@ h4 {
 .header__menu-list {
   display: flex;
   align-items: center;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  column-gap: 40px;
 }
 @media (max-width: 1280px) {
   .header__menu-list {
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 .header__menu-link {
@@ -609,8 +602,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
 }
 .hero__body {
   max-width: 531px;
@@ -627,12 +619,22 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  column-gap: 50px;
 }
 .hero__partners-amazon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=styles.css.map */
+}
+.hero__partners-amazon:hover svg {
+  fill: hsl(36, 100%, 50%);
+}
+.hero__partners-link-netflix:hover {
+  fill: hsl(358, 74.9%, 48.4%);
+}
+.hero__partners-link-zoom:hover {
+  fill: hsl(213, 100%, 58.8%);
+}
+
+/*# sourceMappingURL=styles.css.map */

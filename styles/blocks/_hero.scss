@@ -37,5 +37,17 @@
             justify-content: center;
             align-items: center;
         }
+
+        &-amazon:hover svg {
+                fill: hsl(36 100% 50%);
+        }
+
+        &-link-netflix:hover {
+                fill: hsl(358 74.9% 48.4%);
+        }
+
+        &-link-zoom:hover {
+            fill: hsl(213 100% 58.8%);
+        }
     }
 }
