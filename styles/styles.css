@@ -609,18 +609,28 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 .hero__body {
+  max-width: 531px;
   display: flex;
   flex-direction: column;
   row-gap: 35px;
+  align-items: start;
+}
+.hero__description {
+  font-size: 20px;
+  line-height: 1.4;
 }
 .hero__partners-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
-.hero__amazon-link {
+.hero__partners-amazon {
   display: flex;
   flex-direction: column;
   justify-content: center;
