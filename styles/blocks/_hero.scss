@@ -1,4 +1,8 @@
 .hero {
+    @include tablet {
+        row-gap: 45px;
+    }
+
     @include mobile {
         row-gap: 35px;
     }
@@ -12,6 +16,12 @@
         justify-content: space-between;
         align-items: start;
         column-gap: 50px;
+
+        @include tablet {
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+        }
 
         @include mobile {
             flex-direction: column;
@@ -28,12 +38,20 @@
         row-gap: 35px;
         align-items: start;
 
+        @include tablet {
+            row-gap: 20px;
+        }
+
         @include mobile {
             display: contents;
         }   
     }
 
     &__title {
+        @include tablet {
+            font-size: 40px;
+        }
+
         @include mobile {
             font-size: 38px;
             order: -2;
@@ -43,6 +61,10 @@
     &__description {
         font-size: 20px;
         line-height: 1.4;
+
+        @include tablet {
+            font-size: 18px;
+        }
 
         @include mobile {
             font-size: 16px;
@@ -99,8 +121,13 @@
         }
     }
     &__image {
-        @include tablet {
+        @include desktop {
             max-width: 50%;
+            height: auto;
+        }
+
+        @include tablet {
+            max-width: 40%;
             height: auto;
         }
 
