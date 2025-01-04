@@ -672,7 +672,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .hero__title {
-    font-size: 38px;
+    font-size: 35px;
     order: -2;
   }
 }
@@ -760,7 +760,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .hero__image {
-    max-width: 429px;
+    max-width: 380px;
     height: auto;
     order: -1;
   }
