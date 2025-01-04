@@ -35,7 +35,7 @@
 
     &__logo {
         @include hover-svg {
-            fill: var(--color-light-уellow);
+            fill: var(--color-light-peach);
             transition-duration: var(--transition-duration)
         }
     }
@@ -82,7 +82,7 @@
             }
             
             &:hover::after {
-                background-color: var(--color-light-уellow);
+                background-color: var(--color-light-peach);
             }
         }
     }
@@ -99,8 +99,8 @@
 
     &__button {
         @include hover {
-            background-color: var(--color-light-уellow);
-            border-color: var(--color-light-уellow);
+            background-color: var(--color-light-peach);
+            border-color: var(--color-light-peach);
             color: var(--color-dark);
             transition-duration: var(--transition-duration);
         }
