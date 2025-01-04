@@ -60,7 +60,7 @@
             height: 48px;
 
             @include hover {
-                color: var(--color-gray-alt);
+                color: var(--color-dark);
             }
 
             @include hover {
@@ -101,7 +101,7 @@
         @include hover {
             background-color: var(--color-light-уellow);
             border-color: var(--color-light-уellow);
-            color: var(--color-gray-alt);
+            color: var(--color-dark);
             transition-duration: var(--transition-duration);
         }
     }
