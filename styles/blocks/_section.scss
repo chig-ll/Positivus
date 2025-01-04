@@ -1,11 +1,3 @@
 .section {
     padding-block: var(--section-padding-y);
-
-    @include tablet {
-        padding-block: 35px;
-    }
-
-    @include mobile {
-        padding-block: 25px;
-    }
 }
