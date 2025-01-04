@@ -433,12 +433,12 @@ h4 {
 }
 @media (hover: hover) {
   .header__menu-link:hover {
-    color: var(--color-gray-alt);
+    color: var(--color-dark);
   }
 }
 @media (hover: none) {
   .header__menu-link:active {
-    color: var(--color-gray-alt);
+    color: var(--color-dark);
   }
 }
 @media (hover: hover) {
@@ -480,7 +480,7 @@ h4 {
   .header__button:hover {
     background-color: var(--color-light-уellow);
     border-color: var(--color-light-уellow);
-    color: var(--color-gray-alt);
+    color: var(--color-dark);
     transition-duration: var(--transition-duration);
   }
 }
@@ -488,7 +488,7 @@ h4 {
   .header__button:active {
     background-color: var(--color-light-уellow);
     border-color: var(--color-light-уellow);
-    color: var(--color-gray-alt);
+    color: var(--color-dark);
     transition-duration: var(--transition-duration);
   }
 }
@@ -688,6 +688,20 @@ h4 {
 @media (max-width: 767px) {
   .hero__description {
     font-size: 16px;
+  }
+}
+@media (hover: hover) {
+  .hero__button:hover {
+    background-color: var(--color-light-уellow);
+    color: var(--color-dark);
+    border-color: var(--color-light-уellow);
+  }
+}
+@media (hover: none) {
+  .hero__button:active {
+    background-color: var(--color-light-уellow);
+    color: var(--color-dark);
+    border-color: var(--color-light-уellow);
   }
 }
 @media (max-width: 767px) {
