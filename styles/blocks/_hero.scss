@@ -65,13 +65,11 @@
         }
     }
     &__image {
-        @include tablet {
             max-width: 50%;
             height: auto;
         }
 
         @include mobile {
-            max-width: 429px;
             height: auto;
             order: -1;
         }
