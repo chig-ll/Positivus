@@ -1,4 +1,12 @@
 .hero {
+    @include tablet {
+        row-gap: 45px;
+    }
+
+    @include mobile {
+        row-gap: 35px;
+    }
+
     display: flex;
     flex-direction: column;
     row-gap: var(--section-padding-y);
@@ -9,8 +17,17 @@
         align-items: start;
         column-gap: 50px;
 
+        @include tablet {
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+        }
+
         @include mobile {
             flex-direction: column;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -21,13 +38,22 @@
         row-gap: 35px;
         align-items: start;
 
+        @include tablet {
+            row-gap: 20px;
+        }
+
         @include mobile {
             display: contents;
-        }
+        }   
     }
 
     &__title {
+        @include tablet {
+            font-size: 40px;
+        }
+
         @include mobile {
+            font-size: 35px;
             order: -2;
         }
     }
@@ -35,6 +61,26 @@
     &__description {
         font-size: 20px;
         line-height: 1.4;
+
+        @include tablet {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        @include hover {
+            background-color: var(--color-light-peach);
+            color: var(--color-dark);
+            border-color: var(--color-light-peach);
+        }
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__partners {
@@ -43,6 +89,16 @@
             justify-content: space-between;
             align-items: center;
             column-gap: 50px;
+
+            & {
+                @include mobile {
+                    flex-wrap: wrap;
+                    row-gap: 25px;
+                    justify-content: center;
+                    column-gap: 80px;
+                    align-items: center;
+                }
+            }
         }
 
         &-amazon {
@@ -65,11 +121,18 @@
         }
     }
     &__image {
+        @include desktop {
             max-width: 50%;
             height: auto;
         }
 
+        @include tablet {
+            max-width: 40%;
+            height: auto;
+        }
+
         @include mobile {
+            max-width: 380px;
             height: auto;
             order: -1;
         }
