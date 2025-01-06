@@ -3,8 +3,8 @@
     --gap: 40px;
 
     display: grid;
-    grid-template-columns: repeat(var(--gridColumns, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(var(--gridColumns), 1fr);
+    gap: var(--gap);
 
     @for $i from 2 through 12 {
         &--#{$i} {
