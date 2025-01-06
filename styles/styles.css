@@ -1007,15 +1007,6 @@ h4 {
     padding: 50px;
   }
 }
-.banner__title {
-  font-size: 30px;
-  font-weight: 500;
-}
-@media (max-width: 767px) {
-  .banner__title {
-    font-size: 26px;
-  }
-}
 .banner__description {
   font-size: 18px;
   max-width: 500px;
