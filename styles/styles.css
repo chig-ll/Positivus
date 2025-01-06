@@ -974,6 +974,11 @@ h4 {
   --bannerImageOffsetY: 24px;
   padding-block: var(--bannerImageOffsetY);
 }
+@media (max-width: 1023px) {
+  .banner {
+    --bannerImageOffsetY: 0;
+  }
+}
 .banner__inner {
   display: flex;
   align-items: center;
@@ -982,6 +987,11 @@ h4 {
   background-color: var(--color-light-gray);
   border-radius: var(--border-radius-large);
 }
+@media (max-width: 767px) {
+  .banner__inner {
+    justify-content: center;
+  }
+}
 .banner__body {
   padding: 60px;
   display: flex;
@@ -989,8 +999,36 @@ h4 {
   align-items: start;
   row-gap: 26px;
 }
+@media (max-width: 767px) {
+  .banner__body {
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+  }
+}
+.banner__title {
+  font-size: 30px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .banner__title {
+    font-size: 26px;
+  }
+}
 .banner__description {
+  font-size: 18px;
   max-width: 500px;
+}
+@media (max-width: 767px) {
+  .banner__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .banner__button {
+    font-size: 20px;
+  }
 }
 .banner__image {
   margin-block: calc(var(--bannerImageOffsetY) * -1);
