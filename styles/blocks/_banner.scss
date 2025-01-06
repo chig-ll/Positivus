@@ -48,6 +48,12 @@
         @include mobile {
             font-size: 20px;
         }
+
+        @include hover {
+            background-color: var(--color-light-peach);
+            border-color: var(--color-light-peach);
+            color: var(--color-dark);
+        }
     }
 
     &__image {

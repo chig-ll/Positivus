@@ -1021,6 +1021,20 @@ h4 {
     font-size: 20px;
   }
 }
+@media (hover: hover) {
+  .banner__button:hover {
+    background-color: var(--color-light-peach);
+    border-color: var(--color-light-peach);
+    color: var(--color-dark);
+  }
+}
+@media (hover: none) {
+  .banner__button:active {
+    background-color: var(--color-light-peach);
+    border-color: var(--color-light-peach);
+    color: var(--color-dark);
+  }
+}
 .banner__image {
   margin-block: calc(var(--bannerImageOffsetY) * -1);
 }/*# sourceMappingURL=styles.css.map */
