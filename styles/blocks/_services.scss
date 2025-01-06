@@ -1,5 +1,9 @@
 .services {
     &__list:not(:last-child) {
         margin-bottom: 120px;
+
+        @include mobile {
+            margin-bottom: 70px;
+        }
     }
 }
