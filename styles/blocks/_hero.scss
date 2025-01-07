@@ -106,20 +106,34 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            & svg {
+                & {
+                    fill: hsl(97 0% 72%);
+                }
+                @include hover {
+                    fill: hsl(36 100% 50%);
+                }
+            }
         }
 
-        &-amazon:hover svg {
-            fill: hsl(36 100% 50%);
+        &-netflix {
+            & svg {
+                @include hover {
+                    fill: hsl(358 74.9% 48.4%);
+                }
+            }
         }
 
-        &-link-netflix:hover {
-            fill: hsl(358 74.9% 48.4%);
-        }
-
-        &-link-zoom:hover {
-            fill: hsl(213 100% 58.8%);
+        &-zoom {
+            & svg {
+                @include hover {
+                    fill: hsl(213 100% 58.8%);
+                }
+            }
         }
     }
+
     &__image {
         @include desktop {
             max-width: 50%;

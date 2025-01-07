@@ -794,14 +794,38 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-.hero__partners-amazon:hover svg {
-  fill: hsl(36, 100%, 50%);
+.hero__partners-amazon svg {
+  fill: hsl(97, 0%, 72%);
 }
-.hero__partners-link-netflix:hover {
-  fill: hsl(358, 74.9%, 48.4%);
+@media (hover: hover) {
+  .hero__partners-amazon svg:hover {
+    fill: hsl(36, 100%, 50%);
+  }
 }
-.hero__partners-link-zoom:hover {
-  fill: hsl(213, 100%, 58.8%);
+@media (hover: none) {
+  .hero__partners-amazon svg:active {
+    fill: hsl(36, 100%, 50%);
+  }
+}
+@media (hover: hover) {
+  .hero__partners-netflix svg:hover {
+    fill: hsl(358, 74.9%, 48.4%);
+  }
+}
+@media (hover: none) {
+  .hero__partners-netflix svg:active {
+    fill: hsl(358, 74.9%, 48.4%);
+  }
+}
+@media (hover: hover) {
+  .hero__partners-zoom svg:hover {
+    fill: hsl(213, 100%, 58.8%);
+  }
+}
+@media (hover: none) {
+  .hero__partners-zoom svg:active {
+    fill: hsl(213, 100%, 58.8%);
+  }
 }
 @media (max-width: 1280px) {
   .hero__image {
