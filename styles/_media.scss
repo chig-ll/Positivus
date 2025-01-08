@@ -8,7 +8,7 @@ $mobile-above: 768px;
 $mobile: 767px;
 
 @mixin desktop-above {
-    @media (min-width: $desktop-abvoe) {
+    @media (min-width: $desktop-above) {
         @content;
     }
 }
