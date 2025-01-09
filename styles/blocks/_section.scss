@@ -1,6 +1,10 @@
 .section {
     padding-block: var(--section-padding-y);
 
+    &--hidden-x {
+        overflow-x: hidden;
+    }
+
     &__header {
         display: flex;
         justify-content: start;
