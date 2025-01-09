@@ -1,0 +1,5 @@
+.card-responsive {
+    @include mobile {
+        overflow-x: auto;
+    }
+}
