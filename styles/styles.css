@@ -1149,7 +1149,7 @@ h4 {
   }
 }
 @media (max-width: 767px) {
-  .table-responsive {
+  .card-responsive {
     overflow-x: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
