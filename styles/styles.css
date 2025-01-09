@@ -1136,4 +1136,100 @@ h4 {
   }
 }
 
+.working__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  counter-reset: custom-counter;
+  list-style: none;
+}
+.working__item {
+  counter-increment: custom-counter;
+}
+.working__accordion {
+  --indicatorVerticalRotate: 90deg;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  background-color: var(--color-light-gray);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .working__accordion:hover {
+    background-color: var(--color-light-peach);
+  }
+}
+@media (hover: none) {
+  .working__accordion:active {
+    background-color: var(--color-light-peach);
+  }
+}
+.working__accordion[open] {
+  --indicatorVerticalRotate: none;
+  background-color: var(--color-light-peach);
+}
+.working__accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+.working__accordion-title {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+.working__accordion-title::before {
+  content: "0" counter(custom-counter);
+  font-size: 2em;
+  column-gap: 20px;
+}
+.working__accordion-indicator {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  background-color: var(--color-light-gray);
+  border-radius: 50%;
+  border: var(--border);
+  transition-duration: var(--transition-duration);
+}
+.working__accordion-indicator::before, .working__accordion-indicator::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  background-color: var(--color-dark);
+}
+.working__accordion-indicator::after {
+  rotate: var(--indicatorVerticalRotate);
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .working__accordion-indicator:hover {
+    background-color: var(--color-gray-alt);
+  }
+}
+@media (hover: none) {
+  .working__accordion-indicator:active {
+    background-color: var(--color-gray-alt);
+  }
+}
+.working__accordion-body {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: var(--border);
+}
+
 /*# sourceMappingURL=styles.css.map */
