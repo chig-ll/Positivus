@@ -1172,6 +1172,7 @@ h4 {
   }
 }
 .working__item {
+  list-style: none;
   --counterContent: counter(custom-counter);
   counter-increment: custom-counter;
 }
