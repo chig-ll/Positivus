@@ -41,6 +41,11 @@
       background-color: var(--color-light-peach);
     }
 
+    summary::marker {
+      display: none;
+      content: '';
+    }
+
     &[open] {
       --indicatorVerticalRotate: none;
 
@@ -57,11 +62,6 @@
 
       @include mobile {
         column-gap: 28px;
-      }
-
-      &::marker {
-        display: none;
-        content: '';
       }
     }
 
