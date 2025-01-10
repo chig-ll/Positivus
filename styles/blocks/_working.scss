@@ -12,6 +12,8 @@
   }
 
   &__item {
+    list-style: none;
+
     --counterContent: counter(custom-counter);
 
     counter-increment: custom-counter;
