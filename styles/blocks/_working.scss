@@ -5,10 +5,20 @@
     row-gap: 30px;
     counter-reset: custom-counter;
     list-style: none;
+
+    @include mobile {
+      row-gap: 20px;
+    }
   }
 
   &__item {
+    --counterContent: counter(custom-counter);
+
     counter-increment: custom-counter;
+
+    &:nth-child(-n + 9) {
+      --counterContent: '0' counter(custom-counter);
+    }
   }
 
   &__accordion {
@@ -22,6 +32,10 @@
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow);
     transition-duration: var(--transition-duration);
+
+    @include mobile {
+      padding: 30px;
+    }
 
     @include hover {
       background-color: var(--color-light-peach);
@@ -40,6 +54,10 @@
       column-gap: 50px;
       cursor: pointer;
       user-select: none;
+
+      @include mobile {
+        column-gap: 28px;
+      }
     }
 
     &-title {
@@ -48,16 +66,29 @@
       column-gap: 25px;
 
       &::before {
-        content: '0' counter(custom-counter);
+        content: var(--counterContent);
         font-size: 2em;
         column-gap: 20px;
+
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+
+      @include mobile {
+        font-size: clamp(16px, 4.18vw, 18px);
+        column-gap: 33px;
       }
     }
 
     &-indicator {
       @include flex-center;
       @include square(58px);
+      @include mobile {
+        @include square (30px)
+      }
 
+      flex-shrink: 0;
       position: relative;
       background-color: var(--color-light-gray);
       border-radius: 50%;
