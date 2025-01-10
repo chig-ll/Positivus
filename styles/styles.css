@@ -1204,6 +1204,10 @@ h4 {
     background-color: var(--color-light-peach);
   }
 }
+.working__accordion summary::marker {
+  display: none;
+  content: "";
+}
 .working__accordion[open] {
   --indicatorVerticalRotate: none;
   background-color: var(--color-light-peach);
@@ -1224,10 +1228,6 @@ h4 {
     -moz-column-gap: 28px;
          column-gap: 28px;
   }
-}
-.working__accordion-header::marker {
-  display: none;
-  content: "";
 }
 .working__accordion-title {
   display: flex;
