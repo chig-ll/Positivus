@@ -58,6 +58,11 @@
       @include mobile {
         column-gap: 28px;
       }
+
+      &::marker {
+        display: none;
+        content: '';
+      }
     }
 
     &-title {
