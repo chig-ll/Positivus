@@ -1172,7 +1172,6 @@ h4 {
   }
 }
 .working__item {
-  list-style: none;
   --counterContent: counter(custom-counter);
   counter-increment: custom-counter;
 }
@@ -1210,6 +1209,7 @@ h4 {
   background-color: var(--color-light-peach);
 }
 .working__accordion-header {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1219,6 +1219,9 @@ h4 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+.working__accordion-header::-webkit-details-marker {
+  list-style-type: none;
 }
 @media (max-width: 767px) {
   .working__accordion-header {
