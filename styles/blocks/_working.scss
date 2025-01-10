@@ -41,7 +41,7 @@
       background-color: var(--color-light-peach);
     }
 
-    summary::marker {
+    summary::-webkit-details-marker {
       display: none;
       content: '';
     }

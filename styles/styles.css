@@ -1186,7 +1186,7 @@ h4 {
     background-color: var(--color-light-peach);
   }
 }
-.working__accordion summary::marker {
+.working__accordion summary::-webkit-details-marker {
   display: none;
   content: "";
 }
