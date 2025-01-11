@@ -375,6 +375,16 @@ h4 {
     --gridColumns: 1;
   }
 }
+@media (max-width: 1023px) {
+  .grid--3 {
+    --gridColumns: 2;
+  }
+}
+@media (max-width: 767px) {
+  .grid--3 {
+    --gridColumns: 1;
+  }
+}
 
 .burger-button {
   padding: 0;
@@ -1282,12 +1292,29 @@ h4 {
   display: inline-flex;
   flex-direction: column;
   row-gap: 40px;
-  align-items: end;
+}
+.team__button {
+  align-self: end;
+}
+@media (hover: hover) {
+  .team__button:hover {
+    background-color: var(--color-light-peach);
+    border-color: var(--color-light-peach);
+    color: var(--color-dark);
+  }
+}
+@media (hover: none) {
+  .team__button:active {
+    background-color: var(--color-light-peach);
+    border-color: var(--color-light-peach);
+    color: var(--color-dark);
+  }
 }
 .team-card {
   display: flex;
   flex-direction: column;
   padding: 40px 35px;
+  height: 100%;
   border: var(--border);
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow);
@@ -1302,6 +1329,16 @@ h4 {
 .team-card__name {
   font-size: 20px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .team-card__name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .team-card__post {
+    font-size: 16px;
+  }
 }
 .team-card__link {
   position: absolute;
@@ -1323,18 +1360,9 @@ h4 {
   margin-top: 28px;
   border-top: var(--border);
 }
-@media (hover: hover) {
-  .team__button:hover {
-    background-color: var(--color-light-peach);
-    border-color: var(--color-light-peach);
-    color: var(--color-dark);
-  }
-}
-@media (hover: none) {
-  .team__button:active {
-    background-color: var(--color-light-peach);
-    border-color: var(--color-light-peach);
-    color: var(--color-dark);
+@media (max-width: 767px) {
+  .team-card__description {
+    font-size: 16px;
   }
 }
 
