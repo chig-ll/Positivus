@@ -1,0 +1,54 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 35px;
+  height: 100%;
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+  box-shadow: var(--shadow);
+
+  &__header {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: end;
+    column-gap: 20px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__post {
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    & svg {
+      @include hover {
+        fill: hsl(200 73.8% 50.6%);
+      }
+    }
+  }
+
+  &__description {
+    padding-top: 28px;
+    margin-top: 28px;
+    border-top: var(--border);
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
