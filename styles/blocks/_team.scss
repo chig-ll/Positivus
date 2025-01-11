@@ -11,6 +11,10 @@
       border-color: var(--color-light-peach);
       color: var(--color-dark);
     }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   @include tablet {
