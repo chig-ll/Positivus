@@ -7,6 +7,10 @@
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow);
 
+  @include mobile {
+    padding-inline: 50px;
+  }
+
   &__header {
     display: flex;
     position: relative;
@@ -49,6 +53,8 @@
     border-top: var(--border);
 
     @include mobile {
+      padding-top: 20px;
+      margin-top: 20px;
       font-size: 16px;
     }
   }

@@ -1324,6 +1324,11 @@ h4 {
   border-radius: var(--border-radius-large);
   box-shadow: var(--shadow);
 }
+@media (max-width: 767px) {
+  .team-card {
+    padding-inline: 50px;
+  }
+}
 .team-card__header {
   display: flex;
   position: relative;
@@ -1368,6 +1373,8 @@ h4 {
 }
 @media (max-width: 767px) {
   .team-card__description {
+    padding-top: 20px;
+    margin-top: 20px;
     font-size: 16px;
   }
 }
