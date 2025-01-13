@@ -1379,4 +1379,47 @@ h4 {
   }
 }
 
+.pagination__list {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.pagination__button {
+  border: none;
+  background-color: transparent;
+}
+.pagination__button svg {
+  fill: var(--color-light);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 124px;
+  padding-top: 84px;
+  padding-bottom: 68px;
+  background-color: var(--color-light-dark);
+  border-radius: var(--border-radius-large);
+  color: var(--color-light);
+}
+.testimonials__slider-list {
+  display: flex;
+  column-gap: 50px;
+}
+.testimonials__arrow-button {
+  border: none;
+  background-color: transparent;
+}
+.testimonials__actions {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=styles.css.map */

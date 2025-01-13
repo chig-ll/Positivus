@@ -1,0 +1,30 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  row-gap: 124px;
+  padding-top: 84px;
+  padding-bottom: 68px;
+  background-color: var(--color-light-dark);
+  border-radius: var(--border-radius-large);
+  color: var(--color-light);
+
+  &__slider {
+    &-list {
+      display: flex;
+      column-gap: 50px;
+    }
+  }
+
+  &__arrow {
+    &-button {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  &__actions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
