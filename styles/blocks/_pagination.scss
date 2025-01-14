@@ -1,18 +1,29 @@
-.pagination{
+.pagination {
 
   &__list {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 20px;
   }
 
   &__button {
-    border: none;
-    background-color: transparent;
+    @include reset-button;
+    @include flex-center;
+    @include square(24px);
+
+    color: var(--color-light);
+
+    &.is-current svg {
+      fill: var(--color-light-peach);
+    }
 
     & svg {
       fill: var(--color-light);
+
+      @include hover {
+        fill: var(--color-light-peach);
+      }
     }
   }
 }
