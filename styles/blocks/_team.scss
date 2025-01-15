@@ -1,23 +1,23 @@
 .team {
-  display: inline-flex;
-  flex-direction: column;
-  row-gap: 40px;
-
-  &__button {
-    align-self: end;
-
-    @include hover {
-      background-color: var(--color-light-peach);
-      border-color: var(--color-light-peach);
-      color: var(--color-dark);
-    }
-
-    @include mobile {
-      width: 100%;
-    }
-  }
-
-  @include tablet {
-
-  }
+	display: inline-flex;
+	flex-direction: column;
+	row-gap: 40px;
+	
+	&__button {
+		align-self: end;
+		
+		@include hover {
+			background-color: var(--color-light-peach);
+			border-color: var(--color-light-peach);
+			color: var(--color-dark);
+		}
+		
+		@include mobile {
+			width: 100%;
+		}
+	}
+	
+	@include tablet {
+	
+	}
 }
