@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
@@ -1067,12 +1067,40 @@
 						</label>
 					</fieldset>
 					<div class="contact__body">
-						<div class="contacts__field field"></div>
+						<div class="contacts__field field">
+							<label class="field__label" for="name">Имя</label>
+							<input class="field__input"
+							       id="name"
+										 name="input-1"
+							       placeholder="Имя"
+							/>
+						</div>
+						<div class="contacts__field field">
+							<label class="field__label" for="email">Email*</label>
+							<input class="field__input"
+							       id="email"
+							       name="email"
+							       placeholder="Email"
+							       type="email"
+							       required
+							/>
+						</div>
+						<div class="contacts__field field">
+							<label class="field__label" for="message">Сообщение*</label>
+							<textarea class="field__input field__input-textarea"
+							          id="message"
+							          name="message"
+							          placeholder="Сообщение"
+							          required
+							>
+							</textarea>
+						</div>
 					</div>
 						<button
 						    class="contact__button button"
 						    type="submit"
-						>Отправить сообщение
+						>
+							Отправить сообщение
 						</button>
 				</form>
 			</div>
