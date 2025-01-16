@@ -1,0 +1,32 @@
+.contacts {
+    padding: 60px 100px 80px;
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-large);
+
+    &__request-types {
+        display: flex;
+        align-items: start;
+        column-gap: 35px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        max-width: 556px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: start;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 5px;
+    }
+}
