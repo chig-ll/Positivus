@@ -428,7 +428,7 @@ h4 {
   outline: none;
 }
 .field__input::placeholder {
-  color: var(--color-light-gray);
+  color: var(--color-gray-alt);
 }
 .field__input--textarea {
   height: 190px;
