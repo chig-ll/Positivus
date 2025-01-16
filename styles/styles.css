@@ -338,6 +338,17 @@ h4 {
   align-items: center;
   -moz-column-gap: 14px;
        column-gap: 14px;
+  transition-duration: var(--transition-duration);
+}
+@media (hover: hover) {
+  .radio:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .radio:active {
+    opacity: 0.7;
+  }
 }
 .radio__input:not(:checked) + .radio__emulator::after {
   opacity: 0;
