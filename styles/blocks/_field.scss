@@ -3,4 +3,46 @@
     flex-direction: column;
     align-items: start;
     row-gap: 5px;
+    font-size: 16px;
+    
+    @include mobile {
+        row-gap: 10px;
+    }
+    
+    @include fluid-text(16, 14);
+    
+    &__input {
+        width: 100%;
+        height: var(--input-height);
+        padding-inline: 30px;
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+        
+        @include mobile {
+            padding-inline: 20px;
+        }
+        
+        @include hover {
+            background-color: var(--color-light-peach);
+        }
+        
+        &:focus {
+            border-color: var(--color-light-peach);
+            outline: none;
+        }
+        
+        &::placeholder {
+            color: var(--color-light-gray);
+        }
+        
+        &--textarea {
+            height: 190px;
+            padding-block: 18px;
+            resize: vertical;
+            
+            @include mobile {
+                max-height: 132px;
+            }
+        }
+    }
 }

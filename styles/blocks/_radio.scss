@@ -3,6 +3,10 @@
     align-items: center;
     column-gap: 14px;
     transition-duration: var(--transition-duration);
+     
+     @include mobile {
+         column-gap: 7px;
+     }
 
     @include hover {
         opacity: 0.7;
@@ -22,6 +26,7 @@
         background-color: var(--color-light);
         border: var(--border);
         border-radius: 50%;
+        flex-shrink: 0;
 
         &::after {
             @include square(60%);
