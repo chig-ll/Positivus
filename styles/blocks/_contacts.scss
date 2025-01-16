@@ -3,12 +3,6 @@
     background-color: var(--color-light-gray);
     border-radius: var(--border-radius-large);
 
-    &__request-types {
-        display: flex;
-        align-items: start;
-        column-gap: 35px;
-    }
-
     &__form {
         display: flex;
         flex-direction: column;

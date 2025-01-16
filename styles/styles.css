@@ -1619,12 +1619,6 @@ h4 {
   background-color: var(--color-light-gray);
   border-radius: var(--border-radius-large);
 }
-.contacts__request-types {
-  display: flex;
-  align-items: start;
-  -moz-column-gap: 35px;
-       column-gap: 35px;
-}
 .contacts__form {
   display: flex;
   flex-direction: column;
