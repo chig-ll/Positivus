@@ -1755,8 +1755,10 @@ h4 {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  flex-shrink: 0;
 }
 .footer__navigation {
+  max-height: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -1773,6 +1775,16 @@ h4 {
   position: relative;
   display: inline-flex;
   align-items: center;
+}
+@media (hover: hover) {
+  .footer__menu-link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .footer__menu-link:active {
+    opacity: 0.7;
+  }
 }
 .footer__menu-link::after {
   content: "";
