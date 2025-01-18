@@ -1,0 +1,29 @@
+.footer {
+
+	&__inner {
+		padding: 50px 60px 55px;
+		background-color: var(--color-light-dark);
+		border-radius: var(--border-radius-large);
+		border: var(--border);
+		color: var(--color-light);
+	}
+	
+	&__logo {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+	}
+	
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__menu {
+		
+		&-list {
+			display: flex;
+			column-gap: 40px;
+		}
+	}
+}

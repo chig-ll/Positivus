@@ -1,0 +1,23 @@
+.soc1als {
+	
+	&__list {
+		display: flex;
+		column-gap: 20px;
+	}
+	
+	&__link {
+		&-telegram svg {
+			fill: var(--color-light);
+		}
+		
+		&-twitter {
+			& circle {
+				fill: var(--color-light);
+			}
+			
+			& path {
+				fill: var(--color-light-dark);
+			}
+		}
+	}
+}

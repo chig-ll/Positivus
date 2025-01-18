@@ -290,6 +290,7 @@ a {
 
 h1, h2, h3, h4 {
   font-weight: 500;
+  color: var(--color-dark);
 }
 
 h1 {
@@ -1741,6 +1742,41 @@ h4 {
     color: var(--color-dark);
     border-color: var(--color-light-peach);
   }
+}
+
+.footer__inner {
+  padding: 50px 60px 55px;
+  background-color: var(--color-light-dark);
+  border-radius: var(--border-radius-large);
+  border: var(--border);
+  color: var(--color-light);
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__menu-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.soc1als__list {
+  display: flex;
+  column-gap: 20px;
+}
+.soc1als__link-telegram svg {
+  fill: var(--color-light);
+}
+.soc1als__link-twitter circle {
+  fill: var(--color-light);
+}
+.soc1als__link-twitter path {
+  fill: var(--color-light-dark);
 }
 
 /*# sourceMappingURL=styles.css.map */
