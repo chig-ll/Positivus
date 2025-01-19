@@ -12,6 +12,7 @@
 	
 	&__link {
 		&-telegram svg {
+			transition-duration: var(--transition-duration);
 			fill: var(--color-light);
 
 			@include hover {
@@ -20,19 +21,18 @@
 		}
 
 		&-instagram svg {
+			transition-duration: var(--transition-duration);
 			@include hover {
 				fill: hsl(326 56.9% 48.2%);
 			}
 		}
 		
 		&-twitter svg {
+			transition-duration: var(--transition-duration);
 			fill: var(--color-light);
-			border: 3px solid var(--color-light);
-			border-radius: 50%;
 
 			@include hover {
 				fill: hsl(203 89.1% 53.1%);
-				border-color: hsl(203 89.1% 53.1%);
 			}
 		}
 	}
