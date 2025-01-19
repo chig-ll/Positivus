@@ -11,6 +11,9 @@
 	}
 	
 	&__link {
+		@include flex-center(true);
+		@include square(30px);
+		
 		&-telegram svg {
 			transition-duration: var(--transition-duration);
 			fill: var(--color-light);
@@ -22,6 +25,7 @@
 
 		&-instagram svg {
 			transition-duration: var(--transition-duration);
+			
 			@include hover {
 				fill: hsl(326 56.9% 48.2%);
 			}

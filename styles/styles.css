@@ -1747,7 +1747,7 @@ h4 {
 .footer__inner {
   padding: 50px 60px 55px;
   background-color: var(--color-light-dark);
-  border-radius: 45px 45px 0 0;
+  border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
   border: var(--border);
   color: var(--color-light);
 }
@@ -1760,6 +1760,8 @@ h4 {
 .footer__navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
 }
 .footer__menu {
   display: flex;
@@ -1822,6 +1824,13 @@ h4 {
 .soc1als__item {
   display: flex;
   align-items: center;
+}
+.soc1als__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
 }
 .soc1als__link-telegram svg {
   transition-duration: var(--transition-duration);
