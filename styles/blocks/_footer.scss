@@ -13,6 +13,10 @@
 		align-items: center;
 		column-gap: 10px;
 		flex-shrink: 0;
+		
+		@include hover-svg {
+			fill: var(--color-light-peach);
+		}
 	}
 	
 	&__navigation {
