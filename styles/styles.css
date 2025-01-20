@@ -432,12 +432,12 @@ h4 {
 }
 @media (hover: hover) {
   .field__input:hover {
-    background-color: var(--fieldInputHoverBgColor);
+    border-color: var(--color-light-peach);
   }
 }
 @media (hover: none) {
   .field__input:active {
-    background-color: var(--fieldInputHoverBgColor);
+    border-color: var(--color-light-peach);
   }
 }
 .field__input:focus {
