@@ -1,4 +1,11 @@
 .field {
+    --fieldInputHeight: var(--input-height);
+    --fieldInputTextColor: var(--color-dark);
+    --fieldInputBgColor: var(--color-light);
+    --fieldInputBorderColor: var(--color-dark);
+    --fieldInputPlaceholderColor: var(--color-gray-alt);
+    --fieldInputHoverBgColor: var(--color-light-peach);
+
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -8,14 +15,20 @@
     @include mobile {
         row-gap: 10px;
     }
-    
-    @include fluid-text(16, 14);
+
+    &--big-height {
+        --fieldInputHeight: 68px;
+    }
+
+    &__label {
+        @include fluid-text(16, 14);
+    }
     
     &__input {
         width: 100%;
-        height: var(--input-height);
+        height: var(--fieldInputHeight);
         padding-inline: 30px;
-        border: var(--border);
+        border: 1px solid var(--fieldInputBorderColor);
         border-radius: var(--border-radius-small);
         
         @include mobile {
@@ -23,7 +36,7 @@
         }
         
         @include hover {
-            background-color: var(--color-light-peach);
+            background-color: var(--fieldInputHoverBgColor);
         }
         
         &:focus {
@@ -32,7 +45,7 @@
         }
         
         &::placeholder {
-            color: var(--color-gray-alt);
+            color: var(--fieldInputPlaceholderColor);
         }
         
         &--textarea {
