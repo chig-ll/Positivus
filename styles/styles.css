@@ -325,6 +325,22 @@ h4 {
   background-color: transparent;
   color: var(--color-dark);
 }
+.button--peach {
+  background-color: var(--color-light-peach);
+  color: var(--color-dark);
+}
+@media (hover: hover) {
+  .button--peach:hover {
+    background-color: var(--color-light-dark);
+    color: var(--color-light);
+  }
+}
+@media (hover: none) {
+  .button--peach:active {
+    background-color: var(--color-light-dark);
+    color: var(--color-light);
+  }
+}
 
 .radios {
   display: flex;
@@ -395,7 +411,7 @@ h4 {
   --fieldInputBgColor: var(--color-light);
   --fieldInputBorderColor: var(--color-dark);
   --fieldInputPlaceholderColor: var(--color-gray-alt);
-  --fieldInputHoverBgColor: var(--color-light-peach);
+  --fieldInputHoverBgColor: var(--color-light);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -410,12 +426,19 @@ h4 {
 .field--big-height {
   --fieldInputHeight: 68px;
 }
+.field--dark-bg {
+  --fieldInputBgColor: var(--color-dark-alt);
+  --fieldInputBorderColor: var(--color-light);
+  --fieldInputPlaceholderColor: var(--color-light);
+  --fieldInputHoverBgColor: var(--color-light-dark);
+}
 .field__label {
   font-size: clamp(14px, 1.1111111111vw, 16px);
 }
 .field__input {
   width: 100%;
   height: var(--fieldInputHeight);
+  background-color: var(--fieldInputBgColor);
   padding-inline: 30px;
   border: 1px solid var(--fieldInputBorderColor);
   border-radius: var(--border-radius-small);
@@ -428,11 +451,13 @@ h4 {
 @media (hover: hover) {
   .field__input:hover {
     border-color: var(--color-light-peach);
+    background-color: var(--fieldInputHoverBgColor);
   }
 }
 @media (hover: none) {
   .field__input:active {
     border-color: var(--color-light-peach);
+    background-color: var(--fieldInputHoverBgColor);
   }
 }
 .field__input:focus {
@@ -1846,6 +1871,24 @@ h4 {
     opacity: 0.7;
   }
 }
+.footer__extra {
+  display: inline-flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.footer__extra a {
+  text-decoration: underline;
+}
+@media (hover: hover) {
+  .footer__extra a:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .footer__extra a:active {
+    opacity: 0.7;
+  }
+}
 
 .soc1als__list {
   display: flex;
@@ -1913,8 +1956,6 @@ h4 {
   justify-content: space-between;
   column-gap: 20px;
   align-items: center;
-  width: 100%;
-  max-width: 634px;
   padding: 58px 40px;
   background-color: var(--color-dark-alt);
   border-radius: var(--border-radius-click);
