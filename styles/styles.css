@@ -413,6 +413,7 @@ h4 {
   --fieldInputPlaceholderColor: var(--color-gray-alt);
   --fieldInputHoverBgColor: var(--color-light);
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: start;
   row-gap: 5px;
@@ -1793,16 +1794,6 @@ h4 {
   column-gap: 10px;
   flex-shrink: 0;
 }
-@media (hover: hover) {
-  .footer__logo:hover svg {
-    fill: var(--color-light-peach);
-  }
-}
-@media (hover: none) {
-  .footer__logo:active svg {
-    fill: var(--color-light-peach);
-  }
-}
 .footer__navigation {
   display: flex;
   justify-content: space-between;
@@ -1871,28 +1862,20 @@ h4 {
     opacity: 0.7;
   }
 }
-.footer__extra {
-  display: inline-flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-}
-.footer__extra a {
-  text-decoration: underline;
-}
-@media (hover: hover) {
-  .footer__extra a:hover {
-    opacity: 0.7;
-  }
-}
-@media (hover: none) {
-  .footer__extra a:active {
-    opacity: 0.7;
-  }
-}
 
+@media (max-width: 767px) {
+  .soc1als {
+    order: 1;
+  }
+}
 .soc1als__list {
   display: flex;
   column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .soc1als__list {
+    column-gap: 50px;
+  }
 }
 .soc1als__item {
   display: flex;
@@ -1953,12 +1936,28 @@ h4 {
 
 .subscribe-form {
   display: flex;
-  justify-content: space-between;
   column-gap: 20px;
   align-items: center;
   padding: 58px 40px;
   background-color: var(--color-dark-alt);
   border-radius: var(--border-radius-click);
+}
+.subscribe-form__button {
+  width: 100%;
+}
+@media (max-width: 1280px) {
+  .subscribe-form {
+    flex-direction: column;
+    row-gap: 22px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .subscribe-form {
+    width: clamp(350px, 58.67vw, 450px);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
