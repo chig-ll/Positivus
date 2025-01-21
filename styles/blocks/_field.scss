@@ -4,7 +4,7 @@
     --fieldInputBgColor: var(--color-light);
     --fieldInputBorderColor: var(--color-dark);
     --fieldInputPlaceholderColor: var(--color-gray-alt);
-    --fieldInputHoverBgColor: var(--color-light-peach);
+    --fieldInputHoverBgColor: var(--color-light);
 
     display: flex;
     flex-direction: column;
@@ -20,6 +20,13 @@
         --fieldInputHeight: 68px;
     }
 
+    &--dark-bg {
+        --fieldInputBgColor: var(--color-dark-alt);
+        --fieldInputBorderColor: var(--color-light);
+        --fieldInputPlaceholderColor: var(--color-light);
+        --fieldInputHoverBgColor: var(--color-light-dark);
+    }
+
     &__label {
         @include fluid-text(16, 14);
     }
@@ -27,6 +34,7 @@
     &__input {
         width: 100%;
         height: var(--fieldInputHeight);
+        background-color: var(--fieldInputBgColor);
         padding-inline: 30px;
         border: 1px solid var(--fieldInputBorderColor);
         border-radius: var(--border-radius-small);
@@ -37,6 +45,7 @@
         
         @include hover {
             border-color: var(--color-light-peach);
+            background-color: var(--fieldInputHoverBgColor);
         }
         
         &:focus {

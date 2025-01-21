@@ -13,6 +13,10 @@
 		align-items: center;
 		column-gap: 10px;
 		flex-shrink: 0;
+
+		@include hover-svg {
+			fill: var(--color-light-peach);
+		}
 	}
 	
 	&__navigation {
@@ -80,6 +84,19 @@
 				@include hover {
 					opacity: 0.7;
 				}
+			}
+		}
+	}
+
+	&__extra {
+		display: inline-flex;
+		column-gap: 40px;
+
+		a {
+			text-decoration: underline;
+
+			@include hover {
+				opacity: 0.7;
 			}
 		}
 	}
