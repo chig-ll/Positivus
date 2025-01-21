@@ -1,11 +1,24 @@
 .subscribe-form {
     display: flex;
-    justify-content: space-between;
     column-gap: 20px;
     align-items: center;
-    width: 100%;
-    max-width: 634px;
     padding: 58px 40px;
     background-color: var(--color-dark-alt);
     border-radius: var(--border-radius-click);
+
+    &__button {
+        width: 100%;
+    }
+
+    @include desktop {
+        flex-direction: column;
+        row-gap: 22px;
+        padding: 30px;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    @include mobile {
+        width: clamp(350px, 58.67vw, 450px);
+    }
 }
