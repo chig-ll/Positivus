@@ -1,8 +1,15 @@
 .soc1als {
+	@include mobile {
+		order: 1;
+	}
 	
 	&__list {
 		display: flex;
 		column-gap: 20px;
+
+		@include mobile {
+			column-gap: 50px;
+		}
 	}
 
 	&__item {
